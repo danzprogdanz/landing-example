@@ -4,7 +4,7 @@ import styled from 'styled-components'
 interface SectionWrapperProps {
   children: React.ReactNode
   className?: string
-  backgroundColor?: string
+  $backgroundColor?: string
   padding?: string
   /** For semantic HTML5 structure */
   ariaLabel?: string
@@ -13,8 +13,8 @@ interface SectionWrapperProps {
 const SectionWrapper = styled.section<Omit<SectionWrapperProps, 'children' | 'className'>>`
   width: 100%;
   padding: ${({ padding }) => padding || '4rem 1rem'};
-  background: ${({ backgroundColor, theme }) => 
-    backgroundColor || theme?.background || 'transparent'};
+  background: ${({ $backgroundColor, theme }) => 
+    $backgroundColor || theme?.background || 'transparent'};
   position: relative;
   overflow-x: hidden;
 

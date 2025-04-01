@@ -8,15 +8,15 @@ interface IProps {
 }
 
 const HeaderStyled = styled.header<{
-  backgroundColor?: string
+  $backgroundColor?: string
   color?: string
 }>`
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   z-index: 9999 !important;
-  background-color: ${({ backgroundColor, theme }) => 
-    backgroundColor || theme?.background || 'transparent'};
+  background-color: ${({ $backgroundColor, theme }) => 
+    $backgroundColor || theme?.background || 'transparent'};
     color:  ${({ theme }) =>  theme?.text || 'black'};
   display: flex;
   flex-direction: row;
@@ -40,7 +40,7 @@ const Logo = styled.div`
   font-weight: bold;
 `
 
-const NavLinks = styled.div<{ isOpen: boolean }>`
+const NavLinks = styled.div<{ $isOpen: boolean }>`
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -55,8 +55,8 @@ const NavLinks = styled.div<{ isOpen: boolean }>`
     flex-direction: column;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
-    transform: ${({ isOpen }) => 
-      isOpen ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ $isOpen }) => 
+      $isOpen ? 'translateX(0)' : 'translateX(100%)'};
     z-index: 100;
   }
 `
@@ -158,7 +158,7 @@ export const NavbarComponent: React.FC<IProps> = () => {
       <Logo>Your Logo</Logo>
     
     <NavStyled>
-      <NavLinks isOpen={isMenuOpen}>
+      <NavLinks $isOpen={isMenuOpen}>
         <NavLink>Home</NavLink>
         <NavLink>About</NavLink>
         <NavLink>Services</NavLink>

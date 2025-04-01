@@ -15,19 +15,19 @@ function App() {
         </SectionWrapperComponent>
         <SectionWrapperComponent
           ariaLabel="Hero Section"
-          backgroundColor="#d42020"
+          $backgroundColor="#d42020"
         >
           teste1
         </SectionWrapperComponent>
         <SectionWrapperComponent
           ariaLabel="Hero Section"
-          backgroundColor="#321616"
+          $backgroundColor="#321616"
         >
           teste1
         </SectionWrapperComponent>
         <SectionWrapperComponent
           ariaLabel="Hero Section"
-          backgroundColor="#33627c"
+          $backgroundColor="#33627c"
         >
           teste1
         </SectionWrapperComponent>

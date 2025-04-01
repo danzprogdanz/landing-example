@@ -1,4 +1,3 @@
-import React from "react";
 import { NavbarComponent } from "./components/navbarComponent";
 import { SectionWrapperComponent } from "./components/sectionWrapperComponent";
 import { PageLayoutStyled } from "./components/pageLayoutComponent/styled";

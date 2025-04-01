@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
-type ThemeMode = 'light' | 'dark';
 
 type ThemeColors = {
   primary: string;

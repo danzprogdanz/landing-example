@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../assets/style/color';
-import { useTheme } from '../../context/themeProvider';
 import { FaFacebook, FaTwitter, FaInstagram, FaPhone, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 
 const FooterStyled = styled.footer`
@@ -18,7 +17,7 @@ const FooterContent = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid ${colors.grey};
+  border-bottom: 1px solid grey;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -127,7 +126,6 @@ const FeaturedProperties = styled.div`
 `;
 
 export const FooterComponent: React.FC = () => {
-  const { isDarkMode } = useTheme();
 
   // Replace these with actual property images
   const sampleProperties = [
